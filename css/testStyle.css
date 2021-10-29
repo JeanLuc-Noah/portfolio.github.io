@@ -1,0 +1,36 @@
+*, ::before, ::after{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body{
+	display: flex;
+	height: 100vh;
+	background: #F9F9F9FF;
+	font-family: 'Open Sans', 'Helvetica Neue', 'Hiragino Sans GB', 'LiHei Pro', Arial, sans-serif;
+	justify-content: center;
+	align-items: center;
+}
+a{
+	position: relative;
+	text-decoration: none;
+}
+a img{
+	width: 250px;
+	height: 250px;
+}
+a span{
+	display: flex;
+	width: 40px;
+	height: 40px;
+	background: red;
+	color: #fff;
+	font-size: 1.3em;
+	border-radius: 50%;
+	position: absolute;
+	right: -1rem;
+	top: -1rem;
+	justify-content:center;
+	align-items: center;
+}

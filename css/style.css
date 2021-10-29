@@ -1,0 +1,311 @@
+*, ::before, ::after{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body{
+	font-family: 'Open Sans', 'Helvetica Neue', 'Hiragino Sans GB', 'LiHei Pro', Arial, sans-serif;
+}
+
+.header-container{
+	width: 100%;
+	height: 450px;
+	background: url("../banner/banniere3.jpg");
+	background-size: cover;
+}
+header{
+	width: 80%;
+	height: 70px;
+	margin: auto;
+}
+.logo{
+	width: 200px;
+	height: 70px;
+	float: left;
+	position: relative;
+	left: 20px;
+}
+.logo img{
+	width: 170px;
+	height: 70px;
+}
+
+/************ menu de navigtion ****************/
+
+
+.navbars{
+	float: right;
+	position: relative;
+	right: 20px;
+}
+.navbars ul li{
+	display: inline-block;
+	list-style: none;
+	position: relative;
+}
+.navbars ul li a{
+	text-decoration: none;
+	color: #f9f9f9;
+	line-height: 70px;
+	margin: 10px 20px;
+	font-weight: 500;
+}
+ul li .active::before{
+	content: "";
+	width: 25px;
+	height: 2px;
+	border-bottom: 2px solid #f9f9f9;
+	position: absolute;
+	top: 50px;
+}
+ul li .active::after{
+	content: "";
+	width: 25px;
+	height: 2px;
+	border-bottom: 2px dashed #f9f9f9;
+	position: absolute;
+	top: 50px;
+	left: 50px;
+}
+.navbars ul li a:hover,
+.navbars ul li .active{
+	color: #dddf;
+	transition: 0.5s;
+}
+
+/******************* presentation **********************/
+
+
+.container-presentation{
+	display: flex;
+	width: 50%;
+	height: 400px;
+}
+.block-reseaux{
+	width: 5%;
+	height: 250px;
+	border:1.5px solid #00adef;
+	border-radius: 50px;
+	box-shadow: 0 1px 4px hsla(0,0%,73%, .5);
+	margin: auto;
+	position: relative;
+	left: 4px;
+}
+.block-icon{
+	height: 60px;
+	text-align: center;
+	font-size: 20px;
+	margin: 8px;
+	color: #9da3b2
+}
+.fa-twitter{
+	color: #00adef;
+}
+.block-text{
+	width: 50%;
+	height: 250px;
+	margin: auto;
+}
+.titre-text{
+	color: #00adef;
+	font-weight: 400;
+	font-size: 1.5em;
+}
+.block-text h1{
+	color: #191919;
+}
+.block-text p{
+	color: #3f3f3f;
+	font-weight: 500;
+	font-size: 15px;
+	margin: 10px 0;
+}
+.para2{
+	font-family: arial;
+	font-weight: bold;
+	text-align: justify;
+	color: #6d6d6d;
+}
+
+.block-text button{
+	background: #00adef;
+	padding: 10px 20px;
+	border:1px solid #00adef;
+	border-radius: 3px;
+	outline: none;
+	margin: 10px 0;
+}
+.block-text button a{
+	text-decoration: none;
+	color: #fff;
+	font-size: 12px;
+	font-weight: 500px;
+}
+
+
+
+/*-----------------------------------*\
+			SOUS CONTENT
+\*-----------------------------------*/
+
+.sous-content-container{
+	display: flex;
+	width: 80%;
+	height:auto;
+	margin: auto;
+}
+.container-image{
+	width: 40%;
+	height: 500px;
+	background: url("../illustration/illustration1.png");
+	background-size: cover; 
+	margin: auto;
+}
+
+.container-text{
+	width: 40%;
+	height: auto;
+	margin: 10px auto;
+}
+
+.sous-content-titre h3{
+	color: #00adef;
+	font-weight: 400;
+	margin: 15px 0;
+	font-size: 1.5em;
+}
+h1{
+	position: relative;
+}
+.sous-content-titre h1::before{
+	content: "";
+	width: 40px;
+	height: 2px;
+	border-bottom: 3px solid #00adef;
+	position: absolute;
+	top: 40px;
+}
+.sous-content-titre h1::after{
+	content: "";
+	width: 25px;
+	height: 2px;
+	border-bottom: 3px dashed #00adef;
+	position: absolute;
+	top: 40px;
+	left: 42px;
+}
+.sous-content-titre p{
+	font-family: arial;
+	text-align: justify;
+	margin: 20px 0;
+	color: #565656;
+	font-weight: 400;
+}
+.sous-content-block{
+	width: 100%;
+	height: auto;
+	margin: 20px 0;
+}
+.sous-content-block label{
+	display: block;
+	width: 100%;
+	font-weight: 600;
+	font-size: 15px;
+	color: #000000;
+}
+.sous-content-block label span{
+	float: right;
+	color: #000000;
+	font-weight: 600;
+	font-size: 14px;
+
+}
+.sous-content-block progress{
+	width: 100%;
+	height: auto;
+	padding: 5px;
+	background: #ccc;
+	border-radius: 12px;
+	-webkit-border-radius: 12px;
+	-moz-border-radius: 12px;
+	position: relative;
+
+}
+.sous-content-block progress::before{
+	content: "";
+	display: block;
+	height: auto;
+	padding: 5px;
+	position: absolute;
+	background: #00adef;
+	border-radius: 12px;
+	-webkit-border-radius: 12px;
+	-moz-border-radius: 12px;
+	top: 0px;
+	left: 0;
+}
+
+.sous-content-block .html::before{
+	width: 85%;
+	animation-name: chargement;
+	animation-duration: 3s;
+}
+@keyframes chargement{
+	from{
+		width: 0;
+	}
+	to{
+		width: 85%;
+	}
+}
+.sous-content-block .css::before{
+	width: 75%;
+}
+.sous-content-block .javascript::before{
+	width: 70%;
+}
+.sous-content-block .php::before{
+	width: 68%;
+}
+.sous-content-block .bootstrap::before{
+	width: 85%;
+}
+.sous-content-block progress::after{
+	height: 10px;
+	position: absolute;
+	border-radius: 12px;
+    -webkit-border-radius: 12px;
+    bottom: 0px;
+    overflow: hidden;
+    border-radius: 12px;
+    transform: skewX(-30deg);
+    font: bold 120px/80px sans-serif;
+    letter-spacing: -6px;
+    color: #000;
+    opacity: 0.2;
+}
+.sous-content-block .html::after{
+	content: "||||||||||||||";
+	width: 85%;
+	animation-name: chargement;
+	animation-duration: 3s;
+}
+.sous-content-block .css::after{
+	content: "|||||||||||";
+	width: 75%;
+}
+.sous-content-block .javascript::after{
+	content: "||||||||||";
+	width: 70%;
+}
+.sous-content-block .php::after{
+	content: "||||||||||";
+	width: 68%;
+}
+.sous-content-block .bootstrap::after{
+	content: "||||||||||||||";
+	width: 85%;
+}
+
+
+
